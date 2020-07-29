@@ -167,7 +167,7 @@ module.exports = function () {
   if (props.css === 'sass') {
     // this.directory('src/sass', 'src/sass');
     this.fs.copy(this.templatePath('src/sass'), 'src/sass');
-    this.fs.copyTpl(this.templatePath('src/sass/app.sass'), 'src/sass/app.sass',props);
+    this.fs.copyTpl(this.templatePath('src/sass/app.scss'), 'src/sass/app.scss',props);
   } else{
     this.fs.copy(this.templatePath('src/postcss'), 'src/sass');
     this.fs.copyTpl(this.templatePath('src/sass/app.sss'), 'src/sass/app.sss',props);
